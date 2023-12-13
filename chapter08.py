@@ -66,7 +66,7 @@ print(finalString)
 print(0.1+0.1+0.1)
 print(0.3 == 0.1+0.1+0.1)
 # float에서 2**53을 넘어가는 숫자는 표현할 수 없다
-print(float(2*53) == float(2**53+1))
+print('2**53 넘어가는 수',float(2**53) == float(2**53))
 print(float(2**53+1))
 print(float(2**53))
 
