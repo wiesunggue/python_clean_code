@@ -28,7 +28,7 @@ weights = [42.0 , 3.1415 ,2.718] # X
 
 # 3. 함수, 메소드, 컨테이너 이름 뒤에는 공백을 넣지 않는다.
 print('hello world!') # O
-print ('hello world!') # X
+print          ('hello world!') # X
 blank [:] # X
 blank [2] # X
 

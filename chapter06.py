@@ -39,7 +39,7 @@ print(spam is None)
 # 이스케이프 문자를 활용해서 문자열 리터러렝 포함되지 않는 텍스트를 삽입 할 수 있다.
 # 이스케이프 문자를 많이 사용하는 대신 원시 문자열을 사용하자
 bad_string = 'E:\\python_study\\python_clean_code\\chapter06.py'
-good_string = r'E:\python_study\python_clean_code\chapter06.py'
+good_string = r'E:\python_study\python_clean_code\chapter06.py' # 백슬래시가 중요한 상황에 사용할 수 있음
 print(bad_string)
 print(good_string)
 
@@ -60,12 +60,13 @@ print(eggs)
 
 # 7. 파이썬다운 딕셔너리 사용법
 # 1) 딕셔너리에서 get()과 setdefault()를 이용하자
+# get은 저장된게 없으면 defualt값 반환(딕셔너리에 저장을 하지는 않음), setdefault는 딕셔너리에 저장된 값이 없으면 default값 저장
 numberOfPets = {'dogs':2}
 print('I have',numberOfPets.get('cats',0), 'cats.')
 
 numberOfPets = {'dogs':2}
 numberOfPets.setdefault('cats', 0) # cats가 존재할 경우 아무것도 하지 않는다
-numberOfPets['cats']+=10
+numberOfPets['cats'] += 10
 print(numberOfPets)
 
 # 2) 기본값을 위해 collections.defaultdict를 사용하자

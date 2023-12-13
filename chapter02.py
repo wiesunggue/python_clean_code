@@ -11,10 +11,10 @@ print(Path('E:')/'python_study'/'python_clean_code')
 
 # 홈 디렉토리
 # Path.home()을 이용하면 시스템마다의 홈 디렉토리를 얻을 수 있다.
-print(Path.home())
+print('home: ',Path.home())
 
 # 현재 작업 디렉터리(current working directory, cwd)
-print(Path.cwd())
+print('cwd',Path.cwd())
 
 # 현재 작업 디렉토리를 홈 공간으로 변경하기
 os.chdir(Path.home())
@@ -24,7 +24,7 @@ print(Path.cwd())
 # ../ 는 cwd에서 상위 폴더로의 접근을 의미한다
 
 # 프로그램과 프로세스
-# 프로그램은 실행할 수 있는 모든 소프트웨어 응요프로그램을 의미
+# 프로그램은 실행할 수 있는 모든 소프트웨어 응용프로그램을 의미
 # 프로세스는 프로그램의 실행 인스턴스
 # ex)계산기를 5개를 켠다면 계산기 프로그램은 1개이지만 프로세스는 5개가 실행 중인 상태
 
@@ -62,8 +62,8 @@ print(Path.cwd())
 import subprocess, locale
 # subprocess.run()은 파이썬 프로그램에서 셸 명령을 실행하기
 procObj = subprocess.run(['python', '-c', 'help(len)'], stdout=subprocess.PIPE)
-outputStr = procObj.stdout.decode(locale.getdefaultlocale()[1])
-print(outputStr)
+outputStr = procObj.stdout.decode(locale.getdefaultlocale()[1]) # 셀의 실행 결과를 반환한다
+print('outputStr',outputStr)
 
 # 타이핑을 최소화하는 탭 완성 기능
 # 명령어를 실행하는 중간에 tab을 누르면 자동완성이 실행된다.
