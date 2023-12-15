@@ -9,7 +9,7 @@
 def someCode():
     pass
 
-# 아래 줄 코드에 대한 주석ㅇ부는 여기에 넣는다.
+# 아래 줄 코드에 대한 주석부는 여기에 넣는다.
 someCode()
 
 # 1) 주석 스타일
@@ -116,7 +116,7 @@ data : Any =50
 from typing import List
 
 catNames :List[str] = ['cat','pig']
-numbers :List[Union[int, flaot]] = [1, 1.11, 3.14, 10]
+numbers :List[Union[int, float]] = [1, 1.11, 3.14, 10]
 
 # 같은 방법으로 튜플, 딕셔너리, 집합, 등등의 데이터 타입도 가능하다.
 

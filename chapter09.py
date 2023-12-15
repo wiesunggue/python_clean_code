@@ -43,7 +43,7 @@ False == 0
 
 # 6. 다중 연산자 연달아 쓰기
 print('6th ',False == False in [False]) # 출력하면 True가 나온다.
-
+# 1==0==1 => 1==0 and 0==1 로 해석되는 원리
 # 풀어쓰면 다음과 같다
 (False == False) and (False in [False])
 (True) and (False in [False])

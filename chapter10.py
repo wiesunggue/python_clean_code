@@ -62,12 +62,12 @@ def myMinFunction(*args):
 print(myMinFunction(1,2,3))
 print(myMinFunction([1,2,3]))
 print(myMinFunction([1]))
-
+print(myMinFunction([2],[1],[3]))
 # **를 사용해 가변인수 함수 만들기
 def forMolecules(**kwargs):
     if len(kwargs) == 2 and kwargs['hydrogen'] == 2 and kwargs['oxygen'] == 1:
         return 'water'
-
+print(forMolecules(hydrogen=2,oxygen=1))
 # *와 **로 래퍼 함수 만들기
 # 래퍼는 함수의 인수를 다른 함수로 전달하고, 함수의 반환값을 전달하는 함수
 def printLower(*args, **kwargs):
@@ -76,7 +76,7 @@ def printLower(*args, **kwargs):
         args[i] = str(value).lower()
     return print(*args, **kwargs)
 
-printLower('123','455',sep=', ')
+printLower('123','455','abDDDD',sep=', ')
 # args로 ('123', '455')가 들어가고, kwargs로 {'sep'=', '}가 들어간다.
 
 # 4. 함수형 프로그래밍
